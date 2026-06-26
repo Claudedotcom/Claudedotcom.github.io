@@ -31,16 +31,18 @@
         font-family: Georgia, serif;
 
         @keyframes flicker {
-            0% {opacity: 1;}
-            50% {opacity: 0.6;}
-            75% {opacity: 0.9;}
-            100% {opacity: 1;}
-        }
+            0% { opacity: 1; }
+            25% {opacity: 0.3;}
+            50% { opacity: 0.8; }
+            75% { opacity: 0.2; }
+            100% { opacity: 1; }
+}
+
 
         h1 {
             color: rgb(66, 2, 2);
             font-family: 'Creepster', cursive;
-            text-shadow: 0 0 10px red, 0 0 30px red, 0 0 50px darkred, 0 0 80px lavender;
+            text-shadow: 0 0 10px rgb(173, 207, 50), 0 0 50px rgb(223, 173, 233);
             animation: flicker 1.5s infinite;
         }
     }
