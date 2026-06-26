@@ -29,6 +29,20 @@
         background-color: rgb(34, 58, 58);
         color: rgb(98, 9, 161);
         font-family: Georgia, serif;
+
+        @keyframes flicker {
+            0% {opacity: 1;}
+            50% {opacity: 0.6;}
+            75% {opacity: 0.9;}
+            100% {opacity: 1;}
+        }
+
+        h1 {
+            color: rgb(66, 2, 2);
+            font-family: 'Creepster', cursive;
+            text-shadow: 0 0 10px red, 0 0 30px red, 0 0 50px darkred, 0 0 80px lavender;
+            animation: flicker 1.5s infinite;
+        }
     }
 
     h1 {
