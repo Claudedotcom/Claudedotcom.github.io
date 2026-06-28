@@ -20,6 +20,29 @@
 <div onclick="alert('If you knew where to look - kudos to you! You\'re a suspicious owl! If you stumbled upon this, oh well. You\'re an unsuspecting dog!')" style="position: fixed; top: 0; right: 0; width: 50px; height: 50px; cursor: default;">
 </div>
 
+<script>
+    function respond() {    
+        var input = document.getElementById("userinput").value.toLowerCase();
+        var response = "";
+
+    if (input.includes("who are you")) {
+        response = "I am the darkness between the stars...";
+    } else if (input.includes("hello")) {
+        response = "You shouldn't have come here...";
+    } else if (input.includes("help")) {
+        response = "No one can help you now...";
+    } else if (input.includes("vampire")) {
+        response = "We do not speak of them in the light...";
+    } else {
+        response = "The shadows do not answer...";
+    }
+
+    document.getElementById("chatresponse").innerText = response;
+}
+</script>
+
+</script>
+
 </body>
 <style>
     a {
