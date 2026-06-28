@@ -20,6 +20,13 @@
 <div onclick="alert('If you knew where to look - kudos to you! You\'re a suspicious owl! If you stumbled upon this, oh well. You\'re an unsuspecting dog!')" style="position: fixed; top: 0; right: 0; width: 50px; height: 50px; cursor: default;">
 </div>
 
+<div id="chatbox">
+    <p id="chatresponse">Ask me something, if you dare...</p>
+    <input type="text" id="userinput" placeholder="Type here...">
+    <button onclick="respond()">Ask</button>
+</div>
+
+
 <script>
     function respond() {    
         var input = document.getElementById("userinput").value.toLowerCase();
